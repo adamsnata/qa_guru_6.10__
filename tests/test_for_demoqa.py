@@ -1,3 +1,5 @@
+from selene import browser
+
 from demo_qa_tests.data.path import image_path
 from demo_qa_tests.data.registration_page import RegistrationPage
 from demo_qa_tests.data.registration_done_page import RegistrationDonePage
@@ -10,7 +12,8 @@ def test_registration_page():
     with allure.step("Open registration form"):
         reg_page = RegistrationPage()
         reg_page.open()
-
+        browser.execute_script('document.querySelector("#fixedban").remove()')
+        browser.element('footer').execute_script('element.remove()')
 
     # WHEN
     with allure.step("Fill registration form"):
