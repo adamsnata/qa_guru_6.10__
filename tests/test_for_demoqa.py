@@ -10,6 +10,8 @@ def test_registration_page():
     with allure.step("Open registration form"):
         reg_page = RegistrationPage()
         reg_page.open()
+
+
     # WHEN
     with allure.step("Fill registration form"):
         reg_page.fill_first_name('Valery')
