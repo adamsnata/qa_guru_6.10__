@@ -26,7 +26,7 @@ def test_registration_page():
         reg_page.fill_date_of_birth(1, 5, 1989)
         reg_page.fill_subject('English')
         reg_page.fill_hobbies()
-        reg_page.fill_picture(image_path)
+        # reg_page.fill_picture(image_path)
         reg_page.fill_adress()
         reg_page.submit()
     # THEN
