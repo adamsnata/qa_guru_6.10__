@@ -10,13 +10,14 @@ import allure
 def test_registration_page():
     # GIVEN
     with allure.step("Open registration form"):
-        reg_page = RegistrationPage()
-        reg_page.open()
+
+        browser.open("https://demoqa.com/automation-practice-form")
         browser.execute_script('document.querySelector("#fixedban").remove()')
         browser.element('footer').execute_script('element.remove()')
 
     # WHEN
     with allure.step("Fill registration form"):
+        reg_page = RegistrationPage()
         reg_page.fill_first_name('Valery')
         reg_page.fill_last_name('Maksimov')
         reg_page.fill_email('xam@gmail.com')
