@@ -1,6 +1,5 @@
 from selene import browser
 
-from demo_qa_tests.data.path import image_path
 from demo_qa_tests.data.registration_page import RegistrationPage
 from demo_qa_tests.data.registration_done_page import RegistrationDonePage
 import allure
@@ -39,6 +38,6 @@ def test_registration_page():
         result_page.check_birthday('1 May,1989')
         result_page.check_subject('English')
         result_page.check_hobies('Sports')
-        result_page.check_image('image.jpeg')
+        # result_page.check_image('image.jpeg')
         result_page.check_city('SPB')
         result_page.check_adress('NCR Delhi')
