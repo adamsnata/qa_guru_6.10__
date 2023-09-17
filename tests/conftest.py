@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 
 
-path_picture = os.path.abspath(os.path.join(os.path.dirname(__file__), '../resources'))
+# path_picture = os.path.abspath(os.path.join(os.path.dirname(__file__), '../resources'))
 
 DEFAULT_BROWSER_VERSION = "100.0"
 
